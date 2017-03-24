@@ -1,6 +1,9 @@
 # Gridder
 A helper that layout elements in grid.
 
+## Use in App [Crytokeyboard](https://itunes.apple.com/cn/app/cryptokb/id1207707418?l=en&mt=8)
+Here is its [source code repository](https://github.com/KeithPiTsui/CryptoKeyboard)
+
 ## Somethings worthwhile
 Concerning the layout of each individual key on a whole keyboard, I use somewhat functional idea 
 and follow the idea from [Functional Swift](https://www.objc.io/books/functional-swift/) to create
