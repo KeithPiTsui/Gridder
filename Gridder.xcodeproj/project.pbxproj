@@ -10,6 +10,11 @@
 		0E1AAABB1E84B79500BFD36C /* Gridder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E1AAAB11E84B79500BFD36C /* Gridder.framework */; };
 		0E1AAAC01E84B79500BFD36C /* GridderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1AAABF1E84B79500BFD36C /* GridderTests.swift */; };
 		0E1AAAC21E84B79500BFD36C /* Gridder.h in Headers */ = {isa = PBXBuildFile; fileRef = 0E1AAAB41E84B79500BFD36C /* Gridder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0E1AAACC1E84B7B200BFD36C /* Grid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1AAACB1E84B7B200BFD36C /* Grid.swift */; };
+		0E1AAACF1E84B86200BFD36C /* Keyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1AAACD1E84B86200BFD36C /* Keyboard.swift */; };
+		0E1AAAD01E84B86200BFD36C /* Key.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1AAACE1E84B86200BFD36C /* Key.swift */; };
+		0E1AAAD21E84B94800BFD36C /* CGSizeExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1AAAD11E84B94800BFD36C /* CGSizeExt.swift */; };
+		0E1AAAD41E84B99E00BFD36C /* CGPointExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1AAAD31E84B99D00BFD36C /* CGPointExt.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +34,11 @@
 		0E1AAABA1E84B79500BFD36C /* GridderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GridderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E1AAABF1E84B79500BFD36C /* GridderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridderTests.swift; sourceTree = "<group>"; };
 		0E1AAAC11E84B79500BFD36C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0E1AAACB1E84B7B200BFD36C /* Grid.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Grid.swift; sourceTree = "<group>"; };
+		0E1AAACD1E84B86200BFD36C /* Keyboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Keyboard.swift; sourceTree = "<group>"; };
+		0E1AAACE1E84B86200BFD36C /* Key.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Key.swift; sourceTree = "<group>"; };
+		0E1AAAD11E84B94800BFD36C /* CGSizeExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGSizeExt.swift; sourceTree = "<group>"; };
+		0E1AAAD31E84B99D00BFD36C /* CGPointExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGPointExt.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +81,9 @@
 		0E1AAAB31E84B79500BFD36C /* Gridder */ = {
 			isa = PBXGroup;
 			children = (
+				0E1AAAD61E84B9B400BFD36C /* KeyboardGrid */,
+				0E1AAAD51E84B9A800BFD36C /* Extension */,
+				0E1AAACB1E84B7B200BFD36C /* Grid.swift */,
 				0E1AAAB41E84B79500BFD36C /* Gridder.h */,
 				0E1AAAB51E84B79500BFD36C /* Info.plist */,
 			);
@@ -84,6 +97,24 @@
 				0E1AAAC11E84B79500BFD36C /* Info.plist */,
 			);
 			path = GridderTests;
+			sourceTree = "<group>";
+		};
+		0E1AAAD51E84B9A800BFD36C /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				0E1AAAD31E84B99D00BFD36C /* CGPointExt.swift */,
+				0E1AAAD11E84B94800BFD36C /* CGSizeExt.swift */,
+			);
+			name = Extension;
+			sourceTree = "<group>";
+		};
+		0E1AAAD61E84B9B400BFD36C /* KeyboardGrid */ = {
+			isa = PBXGroup;
+			children = (
+				0E1AAACD1E84B86200BFD36C /* Keyboard.swift */,
+				0E1AAACE1E84B86200BFD36C /* Key.swift */,
+			);
+			name = KeyboardGrid;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,6 +180,7 @@
 					0E1AAAB01E84B79500BFD36C = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = 6T5NK4S24M;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 					0E1AAAB91E84B79500BFD36C = {
@@ -198,6 +230,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E1AAAD21E84B94800BFD36C /* CGSizeExt.swift in Sources */,
+				0E1AAACF1E84B86200BFD36C /* Keyboard.swift in Sources */,
+				0E1AAACC1E84B7B200BFD36C /* Grid.swift in Sources */,
+				0E1AAAD41E84B99E00BFD36C /* CGPointExt.swift in Sources */,
+				0E1AAAD01E84B86200BFD36C /* Key.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -322,6 +359,7 @@
 		0E1AAAC61E84B79500BFD36C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 6T5NK4S24M;
@@ -334,6 +372,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Keith.Pi.Tsui.Gridder;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -341,6 +380,7 @@
 		0E1AAAC71E84B79500BFD36C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 6T5NK4S24M;
@@ -360,6 +400,7 @@
 		0E1AAAC91E84B79500BFD36C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 6T5NK4S24M;
 				INFOPLIST_FILE = GridderTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -372,6 +413,7 @@
 		0E1AAACA1E84B79500BFD36C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 6T5NK4S24M;
 				INFOPLIST_FILE = GridderTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
